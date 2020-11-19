@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+service Greeter {
+  rpc data (userRequest) returns (serveReply) {}
+}
+
+message userRequest {
+  string username = 1;
+  string name = 2;
+}
+
+message serveReply {
+  string username = 1;
+  string name =2;
+}
